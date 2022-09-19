@@ -1020,6 +1020,9 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
+"@modules/articles@file:./modules/articles/":
+  version "1.0.0"
+
 "@modules/splash@file:./modules/splash":
   version "1.0.0"
 
@@ -1236,7 +1239,7 @@
     redux-thunk "^2.4.1"
     reselect "^4.1.5"
 
-"@screens/welcome@file:./screens/welcome/":
+"@screens/welcome@file:./screens/welcome":
   version "1.0.0"
 
 "@sideway/address@^4.1.3":
