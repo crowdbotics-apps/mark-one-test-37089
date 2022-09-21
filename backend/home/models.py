@@ -18,16 +18,3 @@ class UserProfile(models.Model):
         on_delete=models.CASCADE,
         related_name="userprofile_user",
     )
-
-
-class EmergencyContact(models.Model):
-    "Generated Model"
-    user = models.OneToOneField(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="emergencycontact_user",
-    )
-    email = models.EmailField(
-        max_length=254,
-    )
-    phone_number = models.PositiveIntegerField()

@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from home.models import EmergencyContact, UserProfile
+from home.models import UserProfile
 from django.http import HttpRequest
 from django.utils.translation import ugettext_lazy as _
 from allauth.account import app_settings as allauth_settings
@@ -79,10 +79,4 @@ class PasswordSerializer(PasswordResetSerializer):
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
-        fields = "__all__"
-
-
-class EmergencyContactSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = EmergencyContact
         fields = "__all__"

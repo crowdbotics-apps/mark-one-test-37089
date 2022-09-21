@@ -1,4 +1,4 @@
-from .models import UserProfile, EmergencyContact
+from .models import UserProfile
 from django.views.generic import CreateView, UpdateView, DetailView, ListView
 from django.shortcuts import render
 

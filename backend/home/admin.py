@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import EmergencyContact, UserProfile
+from .models import UserProfile
 
 admin.site.register(UserProfile)
-admin.site.register(EmergencyContact)
 
 # Register your models here.
