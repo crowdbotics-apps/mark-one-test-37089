@@ -62,6 +62,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [django-articles](backend/modules)
 - [django-social-auth](backend/modules)
 - [screen-messages-listing](screens/messages-listing)
+- [screen-direct-messages](screens/direct-messages)
 
 # Getting started: Frontend
 
