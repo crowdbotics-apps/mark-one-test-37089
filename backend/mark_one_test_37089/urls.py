@@ -35,6 +35,7 @@ urlpatterns = [
     path("rest-auth/registration/", include("rest_auth.registration.urls")),
     path("home/", include("home.urls")),
     path("api/v1/", include("contacts.api.v1.urls")),
+    path("contacts/", include("contacts.urls")),
 ]
 
 admin.site.site_header = "mark_one_test"

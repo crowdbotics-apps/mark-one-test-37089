@@ -15,6 +15,11 @@ class Contacts(models.Model):
     phone_number = models.CharField(
         max_length=256,
     )
+    contact_name = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
