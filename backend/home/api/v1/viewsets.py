@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import UserProfile
-from .serializers import UserProfileSerializer
+from home.models import Community,UserProfile
+from .serializers import CommunitySerializer,UserProfileSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -41,3 +41,8 @@ class UserProfileViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = UserProfile.objects.all()
+
+class CommunityViewSet(viewsets.ModelViewSet):
+    serializer_class = CommunitySerializer
+    authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
+    queryset = Community.objects.all()
